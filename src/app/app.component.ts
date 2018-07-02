@@ -7,18 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   displayDetails:any;
-  count:number = 1;
+  // count:number = 1;
   buttonCountArray = [];
 
   toggleDetails() {
     this.displayDetails = !this.displayDetails;
-    this.buttonCountArray.push(this.count++);
-    
+    this.buttonCountArray.push(this.buttonCountArray.length + 1); 
   }
 
-  findIndex() {
-   return this.buttonCountArray.includes(5) === true ? 'green' : '' ;
-   // console.log(this.buttonCountArray.includes(5)); 
- }
+//   findIndex() {
+//    return this.buttonCountArray.includes(5) === true ? 'green' : '' ;
+//    // console.log(this.buttonCountArray.includes(5)); 
+//  }
 
 }

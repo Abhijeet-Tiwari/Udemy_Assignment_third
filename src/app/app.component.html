@@ -17,7 +17,7 @@
   My Name is Abhijeet Tiwari.
   My Secret Password is Tuna.
 </p>
-<p *ngFor="let item of buttonCountArray" [ngStyle]="{'background-color' : findIndex()}" [ngClass]="{'click': this.buttonCountArray.includes(5) === true}">
+<p *ngFor="let item of buttonCountArray" [ngStyle]="{'background-color' : item >=5 ? 'blue' : ''}" [ngClass]="{'click': item >=5 }">
     Click : {{ item }}
 </p>
 
