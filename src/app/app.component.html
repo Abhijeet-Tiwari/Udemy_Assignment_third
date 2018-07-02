@@ -17,7 +17,14 @@
   My Name is Abhijeet Tiwari.
   My Secret Password is Tuna.
 </p>
-<p *ngFor="let item of buttonCountArray" [ngStyle]="{'background-color' : item >=5 ? 'blue' : ''}" [ngClass]="{'click': item >=5 }">
+<!-- <p *ngFor="let item of buttonCountArray"
+ [ngStyle]="{'background-color' : item >=5 ? 'blue' : ''}" [ngClass]="{'click': item >=5 }">
+    Click : {{ item }}
+</p> -->
+
+<!-- For another element like timestamp or anything -->
+<p *ngFor="let item of buttonCountArray; let i =index"
+ [ngStyle]="{'background-color' : i >=4 ? 'blue' : ''}" [ngClass]="{'click': i >=4 }">
     Click : {{ item }}
 </p>
 

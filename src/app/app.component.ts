@@ -12,7 +12,8 @@ export class AppComponent {
 
   toggleDetails() {
     this.displayDetails = !this.displayDetails;
-    this.buttonCountArray.push(this.buttonCountArray.length + 1); 
+    // this.buttonCountArray.push(this.buttonCountArray.length + 1);
+    this.buttonCountArray.push(new Date()); 
   }
 
 //   findIndex() {
